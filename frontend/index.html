@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Student Success Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <div class="app-container">
+        <header class="glass-header">
+            <h1>Student Success Hub</h1>
+            <p>Your AI-Powered Academic Assistant & Planner</p>
+        </header>
+
+        <main class="dashboard">
+            <!-- Planner Section -->
+            <section class="glass-card planner-section">
+                <h2>📚 Smart Study Planner</h2>
+                <p class="subtitle">Enter your subjects to generate an optimized study schedule.</p>
+                
+                <div class="input-group">
+                    <input type="text" id="subject-name" placeholder="Subject Name (e.g., Math Data)">
+                    <input type="number" id="subject-difficulty" placeholder="Difficulty (1-10)" min="1" max="10">
+                    <input type="number" id="subject-days" placeholder="Days Left" min="1">
+                    <button id="add-subject-btn" class="btn-primary">Add Subject</button>
+                </div>
+                
+                <div class="subjects-list" id="subjects-list">
+                    <!-- Added subjects appear here -->
+                </div>
+                
+                <button id="generate-plan-btn" class="btn-success">Generate AI Schedule</button>
+                
+                <div class="schedule-result" id="schedule-result">
+                    <!-- Schedule output appears here -->
+                </div>
+            </section>
+
+            <!-- Chatbot Section -->
+            <section class="glass-card chat-section">
+                <h2>🤖 Virtual Teaching Assistant</h2>
+                <p class="subtitle">Ask questions about courses, deadlines, or campus info.</p>
+                
+                <div class="chat-window" id="chat-window">
+                    <div class="message bot-message">Hello! I'm your AI academic assistant. How can I help you today?</div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Ask a question...">
+                    <button id="send-btn" class="btn-primary">Send</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
